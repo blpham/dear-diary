@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23D56" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DailyMoodEntity" representedClassName="DailyMoodEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="mood" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MoodEntity"/>
+    </entity>
+    <entity name="GoalEntity" representedClassName="GoalEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="isCompleted" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="JournalEntity" representedClassName="JournalEntity" syncable="YES">
+        <attribute name="color" optional="YES" attributeType="Transformable" valueTransformerName="UIColorTransformer" customClassName="UIColor"/>
+        <attribute name="name" attributeType="String" defaultValueString="New Journal"/>
+        <relationship name="journalEntries" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="JournalEntryEntity" inverseName="journal" inverseEntity="JournalEntryEntity"/>
+    </entity>
+    <entity name="JournalEntryEntity" representedClassName="JournalEntryEntity" syncable="YES">
+        <attribute name="context" optional="YES" attributeType="Transformable" valueTransformerName="NSAttributedStringTransformer" customClassName="NSAttributedString"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="text" attributeType="Transformable" valueTransformerName="NSAttributedStringTransformer" customClassName="NSAttributedString"/>
+        <relationship name="journal" maxCount="1" deletionRule="Nullify" destinationEntity="JournalEntity" inverseName="journalEntries" inverseEntity="JournalEntity"/>
+    </entity>
+    <entity name="MoodEntity" representedClassName="MoodEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="icon" attributeType="Binary"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+</model>

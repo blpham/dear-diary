@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		851148DD2CE9C3B400A24137 /* MoodJournalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851148DC2CE9C3B400A24137 /* MoodJournalApp.swift */; };
+		851148E12CE9C3B600A24137 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 851148E02CE9C3B600A24137 /* Assets.xcassets */; };
+		851148E42CE9C3B600A24137 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 851148E32CE9C3B600A24137 /* Preview Assets.xcassets */; };
+		851148E62CE9C3B600A24137 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851148E52CE9C3B600A24137 /* Persistence.swift */; };
+		851148E92CE9C3B600A24137 /* MoodJournal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 851148E72CE9C3B600A24137 /* MoodJournal.xcdatamodeld */; };
+		851148F32CE9C3B600A24137 /* MoodJournalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851148F22CE9C3B600A24137 /* MoodJournalTests.swift */; };
+		851148FD2CE9C3B700A24137 /* MoodJournalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851148FC2CE9C3B700A24137 /* MoodJournalUITests.swift */; };
+		851148FF2CE9C3B700A24137 /* MoodJournalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851148FE2CE9C3B700A24137 /* MoodJournalUITestsLaunchTests.swift */; };
+		8511490C2CE9CA3D00A24137 /* HomepageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8511490B2CE9CA3D00A24137 /* HomepageView.swift */; };
+		8511490E2CEBD31700A24137 /* NewEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8511490D2CEBD31700A24137 /* NewEntryView.swift */; };
+		851149142CFBF34B00A24137 /* JournalEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851149132CFBF34B00A24137 /* JournalEntryViewModel.swift */; };
+		851149162CFBFF0B00A24137 /* MyJournalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851149152CFBFF0A00A24137 /* MyJournalsView.swift */; };
+		851149182CFBFF2000A24137 /* JournalEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851149172CFBFF2000A24137 /* JournalEntryView.swift */; };
+		8511491A2CFC020000A24137 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851149192CFC020000A24137 /* CalendarView.swift */; };
+		8511491E2CFC026F00A24137 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8511491D2CFC026F00A24137 /* JournalView.swift */; };
+		851149272CFCF9BC00A24137 /* HorizonCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 851149262CFCF9BC00A24137 /* HorizonCalendar */; };
+		851149292CFD075200A24137 /* GoalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851149282CFD075200A24137 /* GoalViewModel.swift */; };
+		85413E5D2D0021FE0093A1B3 /* MoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85413E5C2D0021FE0093A1B3 /* MoodViewModel.swift */; };
+		85413E5F2D00220B0093A1B3 /* DailyMoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85413E5E2D00220B0093A1B3 /* DailyMoodViewModel.swift */; };
+		85445A022CFD4F2900ADAE11 /* AddGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85445A012CFD4F2900ADAE11 /* AddGoalView.swift */; };
+		85445A042CFE67D000ADAE11 /* JournalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85445A032CFE67D000ADAE11 /* JournalViewModel.swift */; };
+		8553A4F02CFFFEAA00BCFDFE /* JournalEntryEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8553A4EF2CFFFEA900BCFDFE /* JournalEntryEntity+CoreDataClass.swift */; };
+		8553A4F22CFFFEBD00BCFDFE /* JournalEntryEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8553A4F12CFFFEBD00BCFDFE /* JournalEntryEntity+CoreDataProperties.swift */; };
+		8557FDBA2D00B320007C787A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8557FDB92D00B320007C787A /* Utils.swift */; };
+		8557FDBC2D0127FF007C787A /* NewJournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8557FDBB2D0127FF007C787A /* NewJournalView.swift */; };
+		8557FDBE2D01D0BD007C787A /* EditJournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8557FDBD2D01D0BD007C787A /* EditJournalView.swift */; };
+		8557FDC02D022DFB007C787A /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8557FDBF2D022DFB007C787A /* ImageUtils.swift */; };
+		8557FDC22D023A77007C787A /* DrawingCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8557FDC12D023A77007C787A /* DrawingCanvasView.swift */; };
+		8557FDC42D026713007C787A /* SelectMoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8557FDC32D026713007C787A /* SelectMoodView.swift */; };
+		8557FDC62D0E61BB007C787A /* NamePromptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8557FDC52D0E61BA007C787A /* NamePromptView.swift */; };
+		8557FDC82D0E6A40007C787A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8557FDC72D0E6A40007C787A /* LaunchScreen.storyboard */; };
+		85EB5CC72CFEC327006A228A /* RichTextKit in Frameworks */ = {isa = PBXBuildFile; productRef = 85EB5CC62CFEC327006A228A /* RichTextKit */; };
+		85EB5CCA2CFFB535006A228A /* JournalEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EB5CC92CFFB534006A228A /* JournalEntity+CoreDataClass.swift */; };
+		85EB5CCC2CFFB55D006A228A /* JournalEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EB5CCB2CFFB55D006A228A /* JournalEntity+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		851148EF2CE9C3B600A24137 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 851148D12CE9C3B400A24137 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 851148D82CE9C3B400A24137;
+			remoteInfo = MoodJournal;
+		};
+		851148F92CE9C3B700A24137 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 851148D12CE9C3B400A24137 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 851148D82CE9C3B400A24137;
+			remoteInfo = MoodJournal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		851148D92CE9C3B400A24137 /* MoodJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		851148DC2CE9C3B400A24137 /* MoodJournalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodJournalApp.swift; sourceTree = "<group>"; };
+		851148E02CE9C3B600A24137 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		851148E32CE9C3B600A24137 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		851148E52CE9C3B600A24137 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		851148E82CE9C3B600A24137 /* MoodJournal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoodJournal.xcdatamodel; sourceTree = "<group>"; };
+		851148EE2CE9C3B600A24137 /* MoodJournalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoodJournalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		851148F22CE9C3B600A24137 /* MoodJournalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodJournalTests.swift; sourceTree = "<group>"; };
+		851148F82CE9C3B700A24137 /* MoodJournalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoodJournalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		851148FC2CE9C3B700A24137 /* MoodJournalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodJournalUITests.swift; sourceTree = "<group>"; };
+		851148FE2CE9C3B700A24137 /* MoodJournalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodJournalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8511490B2CE9CA3D00A24137 /* HomepageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageView.swift; sourceTree = "<group>"; };
+		8511490D2CEBD31700A24137 /* NewEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEntryView.swift; sourceTree = "<group>"; };
+		851149132CFBF34B00A24137 /* JournalEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryViewModel.swift; sourceTree = "<group>"; };
+		851149152CFBFF0A00A24137 /* MyJournalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyJournalsView.swift; sourceTree = "<group>"; };
+		851149172CFBFF2000A24137 /* JournalEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntryView.swift; sourceTree = "<group>"; };
+		851149192CFC020000A24137 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		8511491D2CFC026F00A24137 /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
+		851149282CFD075200A24137 /* GoalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewModel.swift; sourceTree = "<group>"; };
+		85413E5C2D0021FE0093A1B3 /* MoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodViewModel.swift; sourceTree = "<group>"; };
+		85413E5E2D00220B0093A1B3 /* DailyMoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyMoodViewModel.swift; sourceTree = "<group>"; };
+		85445A012CFD4F2900ADAE11 /* AddGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalView.swift; sourceTree = "<group>"; };
+		85445A032CFE67D000ADAE11 /* JournalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalViewModel.swift; sourceTree = "<group>"; };
+		8553A4EF2CFFFEA900BCFDFE /* JournalEntryEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JournalEntryEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8553A4F12CFFFEBD00BCFDFE /* JournalEntryEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JournalEntryEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8557FDB92D00B320007C787A /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		8557FDBB2D0127FF007C787A /* NewJournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewJournalView.swift; sourceTree = "<group>"; };
+		8557FDBD2D01D0BD007C787A /* EditJournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditJournalView.swift; sourceTree = "<group>"; };
+		8557FDBF2D022DFB007C787A /* ImageUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtils.swift; sourceTree = "<group>"; };
+		8557FDC12D023A77007C787A /* DrawingCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCanvasView.swift; sourceTree = "<group>"; };
+		8557FDC32D026713007C787A /* SelectMoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMoodView.swift; sourceTree = "<group>"; };
+		8557FDC52D0E61BA007C787A /* NamePromptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamePromptView.swift; sourceTree = "<group>"; };
+		8557FDC72D0E6A40007C787A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		85EB5CC92CFFB534006A228A /* JournalEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JournalEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		85EB5CCB2CFFB55D006A228A /* JournalEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JournalEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		851148D62CE9C3B400A24137 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85EB5CC72CFEC327006A228A /* RichTextKit in Frameworks */,
+				851149272CFCF9BC00A24137 /* HorizonCalendar in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		851148EB2CE9C3B600A24137 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		851148F52CE9C3B700A24137 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		851148D02CE9C3B400A24137 = {
+			isa = PBXGroup;
+			children = (
+				851148DB2CE9C3B400A24137 /* MoodJournal */,
+				851148F12CE9C3B600A24137 /* MoodJournalTests */,
+				851148FB2CE9C3B700A24137 /* MoodJournalUITests */,
+				851148DA2CE9C3B400A24137 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		851148DA2CE9C3B400A24137 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				851148D92CE9C3B400A24137 /* MoodJournal.app */,
+				851148EE2CE9C3B600A24137 /* MoodJournalTests.xctest */,
+				851148F82CE9C3B700A24137 /* MoodJournalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		851148DB2CE9C3B400A24137 /* MoodJournal */ = {
+			isa = PBXGroup;
+			children = (
+				851148DC2CE9C3B400A24137 /* MoodJournalApp.swift */,
+				8557FDB92D00B320007C787A /* Utils.swift */,
+				8557FDBF2D022DFB007C787A /* ImageUtils.swift */,
+				8557FDC72D0E6A40007C787A /* LaunchScreen.storyboard */,
+				85EB5CC82CFFB513006A228A /* Models */,
+				851149122CFBF33000A24137 /* ViewModels */,
+				851149112CFBDCF100A24137 /* Views */,
+				851148E02CE9C3B600A24137 /* Assets.xcassets */,
+				851148E52CE9C3B600A24137 /* Persistence.swift */,
+				851148E72CE9C3B600A24137 /* MoodJournal.xcdatamodeld */,
+				851148E22CE9C3B600A24137 /* Preview Content */,
+			);
+			path = MoodJournal;
+			sourceTree = "<group>";
+		};
+		851148E22CE9C3B600A24137 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				851148E32CE9C3B600A24137 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		851148F12CE9C3B600A24137 /* MoodJournalTests */ = {
+			isa = PBXGroup;
+			children = (
+				851148F22CE9C3B600A24137 /* MoodJournalTests.swift */,
+			);
+			path = MoodJournalTests;
+			sourceTree = "<group>";
+		};
+		851148FB2CE9C3B700A24137 /* MoodJournalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				851148FC2CE9C3B700A24137 /* MoodJournalUITests.swift */,
+				851148FE2CE9C3B700A24137 /* MoodJournalUITestsLaunchTests.swift */,
+			);
+			path = MoodJournalUITests;
+			sourceTree = "<group>";
+		};
+		851149112CFBDCF100A24137 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8511490B2CE9CA3D00A24137 /* HomepageView.swift */,
+				8557FDC52D0E61BA007C787A /* NamePromptView.swift */,
+				8557FDC32D026713007C787A /* SelectMoodView.swift */,
+				851149152CFBFF0A00A24137 /* MyJournalsView.swift */,
+				8511491D2CFC026F00A24137 /* JournalView.swift */,
+				8557FDBB2D0127FF007C787A /* NewJournalView.swift */,
+				8557FDBD2D01D0BD007C787A /* EditJournalView.swift */,
+				851149172CFBFF2000A24137 /* JournalEntryView.swift */,
+				8511490D2CEBD31700A24137 /* NewEntryView.swift */,
+				8557FDC12D023A77007C787A /* DrawingCanvasView.swift */,
+				85445A012CFD4F2900ADAE11 /* AddGoalView.swift */,
+				851149192CFC020000A24137 /* CalendarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		851149122CFBF33000A24137 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				85413E5C2D0021FE0093A1B3 /* MoodViewModel.swift */,
+				85413E5E2D00220B0093A1B3 /* DailyMoodViewModel.swift */,
+				85445A032CFE67D000ADAE11 /* JournalViewModel.swift */,
+				851149132CFBF34B00A24137 /* JournalEntryViewModel.swift */,
+				851149282CFD075200A24137 /* GoalViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		85EB5CC82CFFB513006A228A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				85EB5CC92CFFB534006A228A /* JournalEntity+CoreDataClass.swift */,
+				85EB5CCB2CFFB55D006A228A /* JournalEntity+CoreDataProperties.swift */,
+				8553A4EF2CFFFEA900BCFDFE /* JournalEntryEntity+CoreDataClass.swift */,
+				8553A4F12CFFFEBD00BCFDFE /* JournalEntryEntity+CoreDataProperties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		851148D82CE9C3B400A24137 /* MoodJournal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 851149022CE9C3B700A24137 /* Build configuration list for PBXNativeTarget "MoodJournal" */;
+			buildPhases = (
+				851148D52CE9C3B400A24137 /* Sources */,
+				851148D62CE9C3B400A24137 /* Frameworks */,
+				851148D72CE9C3B400A24137 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoodJournal;
+			packageProductDependencies = (
+				851149262CFCF9BC00A24137 /* HorizonCalendar */,
+				85EB5CC62CFEC327006A228A /* RichTextKit */,
+			);
+			productName = MoodJournal;
+			productReference = 851148D92CE9C3B400A24137 /* MoodJournal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		851148ED2CE9C3B600A24137 /* MoodJournalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 851149052CE9C3B700A24137 /* Build configuration list for PBXNativeTarget "MoodJournalTests" */;
+			buildPhases = (
+				851148EA2CE9C3B600A24137 /* Sources */,
+				851148EB2CE9C3B600A24137 /* Frameworks */,
+				851148EC2CE9C3B600A24137 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				851148F02CE9C3B600A24137 /* PBXTargetDependency */,
+			);
+			name = MoodJournalTests;
+			productName = MoodJournalTests;
+			productReference = 851148EE2CE9C3B600A24137 /* MoodJournalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		851148F72CE9C3B700A24137 /* MoodJournalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 851149082CE9C3B700A24137 /* Build configuration list for PBXNativeTarget "MoodJournalUITests" */;
+			buildPhases = (
+				851148F42CE9C3B700A24137 /* Sources */,
+				851148F52CE9C3B700A24137 /* Frameworks */,
+				851148F62CE9C3B700A24137 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				851148FA2CE9C3B700A24137 /* PBXTargetDependency */,
+			);
+			name = MoodJournalUITests;
+			productName = MoodJournalUITests;
+			productReference = 851148F82CE9C3B700A24137 /* MoodJournalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		851148D12CE9C3B400A24137 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					851148D82CE9C3B400A24137 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					851148ED2CE9C3B600A24137 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 851148D82CE9C3B400A24137;
+					};
+					851148F72CE9C3B700A24137 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 851148D82CE9C3B400A24137;
+					};
+				};
+			};
+			buildConfigurationList = 851148D42CE9C3B400A24137 /* Build configuration list for PBXProject "MoodJournal" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 851148D02CE9C3B400A24137;
+			packageReferences = (
+				851149252CFCF9BC00A24137 /* XCRemoteSwiftPackageReference "HorizonCalendar" */,
+				85EB5CC52CFEC327006A228A /* XCRemoteSwiftPackageReference "RichTextKit" */,
+			);
+			productRefGroup = 851148DA2CE9C3B400A24137 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				851148D82CE9C3B400A24137 /* MoodJournal */,
+				851148ED2CE9C3B600A24137 /* MoodJournalTests */,
+				851148F72CE9C3B700A24137 /* MoodJournalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		851148D72CE9C3B400A24137 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8557FDC82D0E6A40007C787A /* LaunchScreen.storyboard in Resources */,
+				851148E42CE9C3B600A24137 /* Preview Assets.xcassets in Resources */,
+				851148E12CE9C3B600A24137 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		851148EC2CE9C3B600A24137 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		851148F62CE9C3B700A24137 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		851148D52CE9C3B400A24137 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8553A4F02CFFFEAA00BCFDFE /* JournalEntryEntity+CoreDataClass.swift in Sources */,
+				8511490E2CEBD31700A24137 /* NewEntryView.swift in Sources */,
+				851149182CFBFF2000A24137 /* JournalEntryView.swift in Sources */,
+				85EB5CCC2CFFB55D006A228A /* JournalEntity+CoreDataProperties.swift in Sources */,
+				8557FDBA2D00B320007C787A /* Utils.swift in Sources */,
+				85445A022CFD4F2900ADAE11 /* AddGoalView.swift in Sources */,
+				851148E62CE9C3B600A24137 /* Persistence.swift in Sources */,
+				8511490C2CE9CA3D00A24137 /* HomepageView.swift in Sources */,
+				85445A042CFE67D000ADAE11 /* JournalViewModel.swift in Sources */,
+				85413E5D2D0021FE0093A1B3 /* MoodViewModel.swift in Sources */,
+				851149162CFBFF0B00A24137 /* MyJournalsView.swift in Sources */,
+				8557FDBC2D0127FF007C787A /* NewJournalView.swift in Sources */,
+				85EB5CCA2CFFB535006A228A /* JournalEntity+CoreDataClass.swift in Sources */,
+				85413E5F2D00220B0093A1B3 /* DailyMoodViewModel.swift in Sources */,
+				8511491A2CFC020000A24137 /* CalendarView.swift in Sources */,
+				8557FDC22D023A77007C787A /* DrawingCanvasView.swift in Sources */,
+				8511491E2CFC026F00A24137 /* JournalView.swift in Sources */,
+				8553A4F22CFFFEBD00BCFDFE /* JournalEntryEntity+CoreDataProperties.swift in Sources */,
+				851148E92CE9C3B600A24137 /* MoodJournal.xcdatamodeld in Sources */,
+				8557FDC42D026713007C787A /* SelectMoodView.swift in Sources */,
+				851148DD2CE9C3B400A24137 /* MoodJournalApp.swift in Sources */,
+				8557FDBE2D01D0BD007C787A /* EditJournalView.swift in Sources */,
+				8557FDC62D0E61BB007C787A /* NamePromptView.swift in Sources */,
+				851149142CFBF34B00A24137 /* JournalEntryViewModel.swift in Sources */,
+				851149292CFD075200A24137 /* GoalViewModel.swift in Sources */,
+				8557FDC02D022DFB007C787A /* ImageUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		851148EA2CE9C3B600A24137 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				851148F32CE9C3B600A24137 /* MoodJournalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		851148F42CE9C3B700A24137 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				851148FD2CE9C3B700A24137 /* MoodJournalUITests.swift in Sources */,
+				851148FF2CE9C3B700A24137 /* MoodJournalUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		851148F02CE9C3B600A24137 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 851148D82CE9C3B400A24137 /* MoodJournal */;
+			targetProxy = 851148EF2CE9C3B600A24137 /* PBXContainerItemProxy */;
+		};
+		851148FA2CE9C3B700A24137 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 851148D82CE9C3B400A24137 /* MoodJournal */;
+			targetProxy = 851148F92CE9C3B700A24137 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		851149002CE9C3B700A24137 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		851149012CE9C3B700A24137 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		851149032CE9C3B700A24137 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MoodJournal/Preview Content\"";
+				DEVELOPMENT_TEAM = AY6X7CM7JJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blpham.MoodJournal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		851149042CE9C3B700A24137 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MoodJournal/Preview Content\"";
+				DEVELOPMENT_TEAM = AY6X7CM7JJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blpham.MoodJournal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		851149062CE9C3B700A24137 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AY6X7CM7JJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blpham.MoodJournalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoodJournal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MoodJournal";
+			};
+			name = Debug;
+		};
+		851149072CE9C3B700A24137 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AY6X7CM7JJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blpham.MoodJournalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoodJournal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MoodJournal";
+			};
+			name = Release;
+		};
+		851149092CE9C3B700A24137 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AY6X7CM7JJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blpham.MoodJournalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MoodJournal;
+			};
+			name = Debug;
+		};
+		8511490A2CE9C3B700A24137 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AY6X7CM7JJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blpham.MoodJournalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MoodJournal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		851148D42CE9C3B400A24137 /* Build configuration list for PBXProject "MoodJournal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				851149002CE9C3B700A24137 /* Debug */,
+				851149012CE9C3B700A24137 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		851149022CE9C3B700A24137 /* Build configuration list for PBXNativeTarget "MoodJournal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				851149032CE9C3B700A24137 /* Debug */,
+				851149042CE9C3B700A24137 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		851149052CE9C3B700A24137 /* Build configuration list for PBXNativeTarget "MoodJournalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				851149062CE9C3B700A24137 /* Debug */,
+				851149072CE9C3B700A24137 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		851149082CE9C3B700A24137 /* Build configuration list for PBXNativeTarget "MoodJournalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				851149092CE9C3B700A24137 /* Debug */,
+				8511490A2CE9C3B700A24137 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		851149252CFCF9BC00A24137 /* XCRemoteSwiftPackageReference "HorizonCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/HorizonCalendar.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		85EB5CC52CFEC327006A228A /* XCRemoteSwiftPackageReference "RichTextKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielsaidi/RichTextKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		851149262CFCF9BC00A24137 /* HorizonCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 851149252CFCF9BC00A24137 /* XCRemoteSwiftPackageReference "HorizonCalendar" */;
+			productName = HorizonCalendar;
+		};
+		85EB5CC62CFEC327006A228A /* RichTextKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 85EB5CC52CFEC327006A228A /* XCRemoteSwiftPackageReference "RichTextKit" */;
+			productName = RichTextKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		851148E72CE9C3B600A24137 /* MoodJournal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				851148E82CE9C3B600A24137 /* MoodJournal.xcdatamodel */,
+			);
+			currentVersion = 851148E82CE9C3B600A24137 /* MoodJournal.xcdatamodel */;
+			path = MoodJournal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 851148D12CE9C3B400A24137 /* Project object */;
+}
