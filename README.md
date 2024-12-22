@@ -15,7 +15,7 @@
 
 ### 1. Clone this repo
 ```
-git clone link
+git clone https://github.com/blpham/dear-diary.git
 ```
 ### 2. Open and run in XCode
 All packages and dependencies are included.
